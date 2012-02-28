@@ -5,7 +5,7 @@ class dmPageNotFoundHandler
   protected
   $dispatcher;
 
-  public function __construct(dmFrontServiceContainer $serviceContainer, sfEventDispatcher $dispatcher)
+  public function __construct(dmFrontBaseServiceContainer $serviceContainer, sfEventDispatcher $dispatcher)
   {
     $this->serviceContainer = $serviceContainer;
     $this->dispatcher       = $dispatcher;

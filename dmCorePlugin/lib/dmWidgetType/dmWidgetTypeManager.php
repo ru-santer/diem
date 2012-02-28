@@ -104,7 +104,7 @@ class dmWidgetTypeManager extends dmConfigurable
 
   protected function componentExists($module, $action)
   {
-    if ('front' !== sfConfig::get('sf_app'))
+    if ('admin' == sfConfig::get('sf_app'))
     {
       return false;
     }

@@ -1,6 +1,7 @@
 <?php
 
-class dmFrontUser extends dmCoreUser
+//class dmFrontUser extends dmCoreUser // diemSocialPlugin
+class dmFrontUser extends dmSocialUser
 {
   protected
     $themeManager;

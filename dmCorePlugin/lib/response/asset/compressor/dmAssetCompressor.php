@@ -100,7 +100,7 @@ abstract class dmAssetCompressor extends dmConfigurable
     $this->cdnAssets        = array();
     $this->preservedAssets  = array();
     $this->processedAssets  = array();
-    $this->cacheKeys        = array();
+    $this->cacheKeys        = array('all'=>'');
     $this->webDir           = sfConfig::get('sf_web_dir');
 
     $this->preProcess();

@@ -133,7 +133,7 @@ class dmContext extends sfContext
     require_once(sfConfig::get('dm_core_dir').'/lib/vendor/sfService/sfServiceContainerInterface.php');
     require_once(sfConfig::get('dm_core_dir').'/lib/vendor/sfService/sfServiceContainer.php');
 
-    $name = 'dm'.dmString::camelize(sfConfig::get('sf_app')).'ServiceContainer';
+    $name = 'dm'.dmString::camelize(sfConfig::get('app_service_container_name',sfConfig::get('sf_app'))).'ServiceContainer';
     $file = dmOs::join(sfConfig::get('dm_cache_dir'), $name.'.php');
 
     if (!file_exists($file))
